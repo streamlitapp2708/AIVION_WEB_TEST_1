@@ -6,14 +6,14 @@ import streamlit as st
 
 # --- HERO SECTION ---
 col1, col2 = st.columns(2, gap="small", vertical_alignment="top")
-with col1:
+with col2:
     st.image("./assets/AIVION.jpg", width=230)
 
-with col2:
-    st.title("", anchor=False)
-    st.write(
-        "Transformative. AI. Solutions"
-    )
+# with col1:
+#     st.title("", anchor=False)
+#     st.write(
+#         "Transformative. AI. Solutions"
+#     )
     # if st.button("✉️ Contact Me"):
     #     show_contact_form()
 

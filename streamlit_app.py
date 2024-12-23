@@ -9,15 +9,26 @@ about_page = st.Page(
     default=True,
 )
 project_1_page = st.Page(
-    "views/sales_dashboard.py",
-    title="Sales Dashboard",
+    "views/our_services.py",
+    title="Our Services",
     icon=":material/bar_chart:",
 )
 project_2_page = st.Page(
-    "views/chatbot.py",
-    title="Chat Bot",
+    "views/Page_UploadFiles.py",
+    title="Upload Files",
     icon=":material/smart_toy:",
 )
+project_3_page = st.Page(
+    "views/Page_database.py",
+    title="Database",
+    icon=":material/smart_toy:",
+)
+project_4_page = st.Page(
+    "views/Page_TalkToData.py",
+    title="Talk To Data",
+    icon=":material/smart_toy:",
+)
+
 
 
 # --- NAVIGATION SETUP [WITHOUT SECTIONS] ---
@@ -27,7 +38,12 @@ project_2_page = st.Page(
 pg = st.navigation(
     {
         "Info": [about_page],
-        "Projects": [project_1_page, project_2_page],
+        "Services ": [project_1_page],
+        "Database Upload": [project_2_page],
+        "Database": [project_3_page],
+        "Talk to Data": [project_4_page],
+
+
     }
 )
 
