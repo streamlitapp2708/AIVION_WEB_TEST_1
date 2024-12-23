@@ -5,39 +5,47 @@ import streamlit as st
 
 
 # --- HERO SECTION ---
-col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
+col1, col2 = st.columns(2, gap="small", vertical_alignment="top")
 with col1:
-    st.image("./assets/profile_image.png", width=230)
+    st.image("./assets/AIVION.jpg", width=230)
 
 with col2:
-    st.title("Sven Bosau", anchor=False)
+    st.title("", anchor=False)
     st.write(
-        "Senior Data Analyst, assisting enterprises by supporting data-driven decision-making."
+        "Transformative. AI. Solutions"
     )
-    if st.button("✉️ Contact Me"):
-        show_contact_form()
+    # if st.button("✉️ Contact Me"):
+    #     show_contact_form()
 
 
 # --- EXPERIENCE & QUALIFICATIONS ---
 st.write("\n")
-st.subheader("Experience & Qualifications", anchor=False)
+st.subheader("Introduction", anchor=False)
 st.write(
     """
-    - 7 Years experience extracting actionable insights from data
-    - Strong hands-on experience and knowledge in Python and Excel
-    - Good understanding of statistical principles and their respective applications
-    - Excellent team-player and displaying a strong sense of initiative on tasks
-    """
+Welcome to M2 AIVION. We are on a mission to democratize AI 
+technology, making it accessible and affordable for businesses that aim 
+to thrive in a data-driven world. In today’s competitive landscape, 
+businesses shouldn’t have to invest millions to unlock the transformative 
+power of AI and Data Analytics. At M2 AIVION, we bring cutting-edge AI 
+capabilities, proven expertise in data science, and deep industry insights 
+to empower organizations of all sizes. We bridge the gap between 
+ambition and execution by providing scalable, cost-effective solutions 
+that deliver real, measurable outcomes. Our consultancy blends 
+expertise in data science, artificial intelligence, and industry-specific 
+insights to empower organizations in their digital journey.    """
 )
 
 # --- SKILLS ---
 st.write("\n")
-st.subheader("Hard Skills", anchor=False)
+st.subheader("Our Vision", anchor=False)
 st.write(
     """
-    - Programming: Python (Scikit-learn, Pandas), SQL, VBA
-    - Data Visualization: PowerBi, MS Excel, Plotly
-    - Modeling: Logistic regression, linear regression, decision trees
-    - Databases: Postgres, MongoDB, MySQL
-    """
+To be a trusted partner in data and AI transformation, helping 
+organizations harness the power of Data & AI innovation. Our vision is to 
+simplify AI adoption, solve complex business challenges, and empower 
+organizations to innovate faster, operate smarter, and achieve 
+sustainable growth.
+ At M2 AIVION, we believe that AI isn’t just for the privileged few; it’s for 
+everyone ready to embrace the future.    """
 )

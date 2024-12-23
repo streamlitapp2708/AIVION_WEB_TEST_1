@@ -4,7 +4,7 @@ import streamlit as st
 # --- PAGE SETUP ---
 about_page = st.Page(
     "views/about_me.py",
-    title="About Me",
+    title="About Us",
     icon=":material/account_circle:",
     default=True,
 )
@@ -33,8 +33,8 @@ pg = st.navigation(
 
 
 # --- SHARED ON ALL PAGES ---
-st.logo("assets/codingisfun_logo.png")
-st.sidebar.markdown("Made with ❤️ by [Sven](https://youtube.com/@codingisfun)")
+st.logo("assets/AIVION.jpg")
+# st.sidebar.markdown("Made with ❤️ by [Sven](https://youtube.com/@codingisfun)")
 
 
 # --- RUN NAVIGATION ---
