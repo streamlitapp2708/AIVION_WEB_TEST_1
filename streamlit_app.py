@@ -19,7 +19,7 @@ project_2_page = st.Page(
     icon=":material/smart_toy:",
 )
 project_3_page = st.Page(
-    "views/Page_database.py",
+    "views/Page_Database.py",
     title="Database",
     icon=":material/smart_toy:",
 )
