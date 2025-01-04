@@ -302,7 +302,7 @@ if st.session_state.last_input:
     st.session_state['chat_history'].append({"role": "user", "content": question})
 
     out_answer = call_chatgpt(st.session_state.last_input,st.session_state['chat_history'],st.session_state["combined_df"])
-    # st.write (f"out_answer is {out_answer}")
+    st.write (f"Bot: {out_answer}")
 
 
 #####We need to shift this after getting GPT response
