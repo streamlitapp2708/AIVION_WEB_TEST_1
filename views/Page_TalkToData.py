@@ -229,7 +229,7 @@ def call_chatgpt(in_question,in_history,in_combined_df):
 
     new_question,history = rephrase_question(in_question,in_history)
 
-    st.write(f"new_question is {new_question}")
+    # st.write(f"new_question is {new_question}")
 
     input_embedding = generate_embeddings(new_question)
     # Step 3: Compute similarity scores and add them to the dataframe
@@ -284,10 +284,10 @@ def call_chatgpt(in_question,in_history,in_combined_df):
 question = ""
 
 
-# Display the last entered value
-if st.session_state.last_input:
-    st.write(f"Last entered value: {st.session_state.last_input}")
-    # st.session_state.last_input
+# # Display the last entered value
+# if st.session_state.last_input:
+#     st.write(f"Last entered value: {st.session_state.last_input}")
+#     # st.session_state.last_input
 
 # combined_df = st.session_state["combined_df"]
 
@@ -302,7 +302,7 @@ if st.session_state.last_input:
     st.session_state['chat_history'].append({"role": "user", "content": question})
 
     out_answer = call_chatgpt(st.session_state.last_input,st.session_state['chat_history'],st.session_state["combined_df"])
-    st.write (f"out_answer is {out_answer}")
+    # st.write (f"out_answer is {out_answer}")
 
 
 #####We need to shift this after getting GPT response
@@ -313,7 +313,7 @@ if st.session_state.last_input:
     st.session_state['chat_history'].append({"role": "assistant", "content": answer})
 #####We need to shift this after getting GPT response
 
-st.write (st.session_state['chat_history'])
+# st.write (st.session_state['chat_history'])
 
 
 
