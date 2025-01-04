@@ -1,0 +1,14 @@
+/* Smaller font for the body */
+body {
+    font-size: 10px;
+}
+
+/* Optional: Smaller font for headers */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 2.7em;
+}
+
+/* Optional: Smaller font for sidebar */
+.css-1d391kg { /* Sidebar class */
+    font-size: 12px;
+}

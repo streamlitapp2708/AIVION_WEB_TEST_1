@@ -2,14 +2,28 @@ import streamlit as st
 
 def initialize_session_state():
     """
-    Initialize session state variables for file uploads and data.
+    Initialize session state variables for file uploads, data, and chat history.
     """
-    # Check if the session state variable 'uploaded_files' exists
+    # Initialize session state variables for uploaded files and their names
     if "uploaded_files" not in st.session_state:
-        # Initialize 'uploaded_files' as an empty list to store DataFrames
         st.session_state["uploaded_files"] = []
-    
-    # Check if the session state variable 'file_names' exists
+
     if "file_names" not in st.session_state:
-        # Initialize 'file_names' as an empty list to store uploaded file names
         st.session_state["file_names"] = []
+
+    # Initialize 'combined_df' to store the final database
+    if "combined_df" not in st.session_state:
+        st.session_state["combined_df"] = None
+
+    # Initialize 'chat_history' to store the conversation between the user and the assistant
+    if "chat_history" not in st.session_state:
+        st.session_state["chat_history"] = []
+
+    # Initialize 'question_history' to store the input questions asked by the user
+    if "question_history" not in st.session_state:
+        st.session_state["question_history"] = []
+
+    # Initialize 'last_input' to store the last entered value in the input box
+    if "last_input" not in st.session_state:
+        st.session_state["last_input"] = ""
+        

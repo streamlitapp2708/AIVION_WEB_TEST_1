@@ -1,5 +1,11 @@
 import streamlit as st
 
+# Load custom CSS
+def load_css(file_path):
+    with open(file_path) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+load_css("style/style.css")
 
 # --- PAGE SETUP ---
 about_page = st.Page(
@@ -42,15 +48,12 @@ pg = st.navigation(
         "Database Upload": [project_2_page],
         "Database": [project_3_page],
         "Talk to Data": [project_4_page],
-
-
     }
 )
 
 
 # --- SHARED ON ALL PAGES ---
 st.logo("assets/AIVION.jpg")
-# st.sidebar.markdown("Made with ❤️ by [Sven](https://youtube.com/@codingisfun)")
 
 
 # --- RUN NAVIGATION ---
